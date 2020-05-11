@@ -6,8 +6,8 @@ if (isNaN(from)) {
 
 
 let exchangeRatio = 23228.63
-let currency1 = prompt("From what currency would you like to exchange?")
-let currency2 = prompt("To what currency would you like to exchange?")
+let currency1 = prompt("From what currency would you like to exchange?").toLowerCase()
+let currency2 = prompt("To what currency would you like to exchange?").toLowerCase()
 
 function fromVNDtoUSD () {
   let result = from / exchangeRatio
