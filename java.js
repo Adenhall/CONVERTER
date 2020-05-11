@@ -5,24 +5,25 @@ if (isNaN(from)) {
 }
 
 
-let exchangeRatio = 23228.63
+let exchangeRatioUSD = 23228.63
+let exchangeRatioEUR = 25061.24
 let currency1 = prompt("From what currency would you like to exchange?").toLowerCase()
 let currency2 = prompt("To what currency would you like to exchange?").toLowerCase()
 
 function fromVNDtoUSD () {
-  let result = from / exchangeRatio
+  let result = from / exchangeRatioUSD
   console.log("The equivalent amount is ",new Intl.NumberFormat('usd',{ style: 'currency', currency: 'USD' }).format(result.toFixed(2)))
 }
 function fromUSDtoVND () {
-  let result = from * exchangeRatio
+  let result = from * exchangeRatioUSD
   console.log("The equivalent amount is ",new Intl.NumberFormat('vnd',{ style: 'currency', currency: 'VND'}).format(result.toFixed(2)))
 }
 function fromVNDtoEUR () {
-  let result = from / exchangeRatio
+  let result = from / exchangeRatioEUR
   console.log("The equivalent amount is ",new Intl.NumberFormat('eur',{ style: 'currency', currency: 'EUR' }).format(result.toFixed(2)))
 }
 function fromEURtoVND () {
-  let result = from * exchangeRatio
+  let result = from * exchangeRatioEUR
   console.log("The equivalent amount is ",new Intl.NumberFormat('vnd',{ style: 'currency', currency: 'VND'}).format(result.toFixed(2)))
 }
 
