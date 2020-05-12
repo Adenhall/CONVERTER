@@ -6,6 +6,27 @@
 
   </head>
   <body>
-  <script type="text/javascript" src="java.js"></script>
+    <div class="container">
+      <div>
+        Currency Exchange
+      </div>
+      <div>
+        <input type="number" id="amountInput"/>
+          <label for="currency">Choose a currency:</label>
+          <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="VND">VND</option>
+            <option value="EUR">EUR</option>
+          </select>
+          <form id="toCurrency">
+          <input type="radio" name="currency" value="usd"> USD<br>
+          <input type="radio" name="currency" value="vnd"> VND<br>
+          <input type="radio" name="currency" value="eur"> EUR
+          </form>
+        <button id="convertButton">Exchange</button>
+        <span id="results"></span>
+      </div>
+    </div>
+  <script type="text/javascript" src="js/java.js"></script>
   </body>
 </html>
