@@ -3,26 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Money Converter</title>
-
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <h1>
+      Currency Exchange
+    </h1>
     <div class="container">
       <div>
-        Currency Exchange
-      </div>
-      <div>
         <input type="number" id="amountInput"/>
-          <label for="currency">Choose a currency:</label>
-          <select id="fromCurrency">
-            <option value="USD">USD</option>
-            <option value="VND">VND</option>
-            <option value="EUR">EUR</option>
-          </select>
-          <form id="toCurrency">
-          <input type="radio" name="currency" value="usd"> USD<br>
-          <input type="radio" name="currency" value="vnd"> VND<br>
-          <input type="radio" name="currency" value="eur"> EUR
-          </form>
+        <label for="fromCurrency">Choose a currency pair:</label>
+        <select id="fromCurrency" type="text">
+          <option value="USD">USD</option>
+          <option value="VND">VND</option>
+          <option value="EUR">EUR</option>
+        </select>
+        <select id="toCurrency" type="text">
+          <option value="USD">USD</option>
+          <option value="VND">VND</option>
+          <option value="EUR">EUR</option>
+        </select>
         <button id="convertButton">Exchange</button>
         <span id="results"></span>
       </div>
