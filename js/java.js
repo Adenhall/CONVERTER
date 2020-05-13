@@ -26,6 +26,12 @@ const currencyRatio = {
     eur: 0.00075,
     vnd: 19.47
   }
+  krw: {
+    usd: 0.00084,
+    krw: 1,
+    eur: 0.00075,
+    vnd: 19.47
+  }
 }
 console.log(currencyRatio.vnd)
 
