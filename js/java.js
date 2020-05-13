@@ -21,11 +21,11 @@ const currencyRatio = {
     vnd: 23235.5
   },
   eur: {
-    usd: 0.00084,
+    usd: 1.0734,
     krw: 1,
-    eur: 0.00075,
-    vnd: 19.47
-  }
+    eur: 1,
+    vnd: 26.57
+  },
   krw: {
     usd: 0.00084,
     krw: 1,
@@ -49,7 +49,8 @@ function convertMoney() {
   let to = toCurrency.value
   let ratio = currencyRatio[from][to]
   let result = (amount.value * ratio).toFixed(2);
-  document.getElementById("results").innerHTML = `Your equivalent amount is ${result}`;
+  let convertedAmount = formatCurrency(to,result)
+  document.getElementById("results").innerHTML = `Your equivalent amount is ${convertedAmount}`;
   console.log(amount)
   console.log(ratio)
 }
